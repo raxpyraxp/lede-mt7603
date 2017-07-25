@@ -36,7 +36,7 @@ define KernelPackage/mt7628
   FILES:=$(PKG_BUILD_DIR)/mt7628_ap/mt7628_ap.ko
   AUTOLOAD:=$(call AutoLoad,91,mt7628_ap)
   SUBMENU:=Drivers
-  DEPENDS:=+uci2dat +8021xd
+  DEPENDS:=+uci2dat +8021xd +kmod-foe-hook +kmod-ralink-mtd
   MENU:=1
 endef
 
