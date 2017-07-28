@@ -23,7 +23,7 @@ detect_mt7628_ap() {
 #	detect_ralink_wifi mt7628_ap mt7628_ap
 	cd /sys/module
 	[ -d $module ] || return
-	uci get wireless.mt7628_ap >/dev/null 2>&1 && return
+	uci get wireless.ra0 >/dev/null 2>&1 && return
 	ifconfig rai0 >/dev/null 2>&1 || return
 	cat <<EOF > /etc/config/wireless
 config wifi-device ra0
