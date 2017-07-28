@@ -67,6 +67,8 @@ define KernelPackage/mt7628/install
 	$(INSTALL_DIR) $(1)/etc/wireless/mt7603e/
 	#$(INSTALL_BIN) ./files/mt7603.dat $(1)/etc/wireless/mt7603/
 	$(INSTALL_BIN) ./files/MT7628_EEPROM.bin $(1)/etc/wireless/mt7603e/
+	$(INSTALL_DIR) $(1)/etc/uci-defaults/
+	$(INSTALL_BIN) ./files/10_mt7628_autostart.sh $(1)/etc/uci-defaults/
 	echo p$(P4REV) > $(1)/etc/wireless/mt7603e/version
 endef
 
