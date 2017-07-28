@@ -38,7 +38,7 @@ config wifi-iface
 	option ifname rai0
 	option network lan
 	option mode ap
-	option ssid MT7628
+	option ssid LEDE
 	option encryption none
 
 EOF
